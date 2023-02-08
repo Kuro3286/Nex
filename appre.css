@@ -54,7 +54,6 @@ body {
     outline: none;
     background: transparent;
     font-size: 0.95em;
-    letter-spacing: 0.05em;
     z-index: 2;
     caret-color: rgb(177,177,177);
     color: rgb(177,177,177);
