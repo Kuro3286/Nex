@@ -1,0 +1,197 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI Semibold, sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+.retour {
+    display: flex;
+    justify-content: left;
+}
+
+.retour .return {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: rgb(117,117,117);
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: rgb(34,34,34);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.retour .return .un {
+    position: absolute;
+    font-size: 1.3em;
+    left: 3px;
+}
+
+.retour .return .deux {
+    position: absolute;
+    font-size: 1.3em;
+    left: 10px;
+}
+
+.retour .return .lettre {
+    position: absolute;
+    left: 28px;
+    font-size: 1.2em;
+    top: 7px;
+}
+
+.retour .return:hover {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: rgb(177, 177, 177);
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: 3px solid rgb(117,117,117);
+    border-radius: 6px;
+    background-color: rgb(34,34,34);
+    text-decoration: none;
+}
+
+
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.general .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general .container .box {
+    position: relative;
+    width: 400px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 3px solid rgb(117,117,117);
+    background-color: rgb(34,34,34);
+}
+
+.general .container .box .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general .container .box .content .form {
+    position: relative;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.general .container .box .content .form .logo {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(177, 177, 177);
+    color: rgb(34,34,34);
+    font-size: 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.general .container .box .content .form h2 {
+    font-size: 2em;
+    color: rgb(177, 177, 177);
+}
+
+.general .container .box .content .form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.general .container .box .content .form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 25px;
+    font-size: 0.9em;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 3px solid rgb(177, 177, 177);
+    outline: none;
+    color: rgb(177, 177, 177);
+}
+
+.general .container .box .content .form .inputBox ion-icon {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    font-size: 1.25em;
+    color: rgb(177, 177, 177);
+    pointer-events: none;
+}
+
+.general .container .box .content .form .inputBox span {
+    position: absolute;
+    left: 25px;
+    font-size: 1em;
+    bottom: 13px;
+    color: rgb(177, 177, 177);
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.general .container .box .content .form .inputBox input:focus ~ span,
+.general .container .box .content .form .inputBox input:valid ~ span {
+    transform: translateY(-22px) translateX(-25px);
+    font-size: 0.7em;
+    background-color: rgb(177, 177, 177);
+    color: rgb(34,34,34);
+    padding: 2px 4px;
+}
+
+.general .container .box .content .form .links {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.general .container .box .content .form .links a {
+    text-decoration: none;
+    padding: 2px 4px;
+    background-color: #333;
+    color: rgb(177, 177, 177);
+    font-size: 0.7em;
+}
+
+.general .container .box .content .form .inputBox input[type="submit"] {
+    background-color: rgb(177, 177, 177);
+    color: rgb(34,34,34);
+    cursor: pointer;
+    padding: 10px;
+}
