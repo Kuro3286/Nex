@@ -50,8 +50,27 @@ var s = new Quiz("bewahren","garder, conserver")
 var t = new Quiz("rau und roh","brut, cru")
 var u = new Quiz("die Umarbeitung","le remaniement")
 
+//Tableau
+var v = new Quiz("im Hintergrund","à l'arrière-plan")
+var w = new Quiz("im Vordergrund","au premier plan")
+var x = new Quiz("rechts, links","droite, gauche")
+var y = new Quiz("Rotkäppchen","le petit chaperon rouge")
+var z = new Quiz("Schneewittchen","blanche neige")
+var aa = new Quiz("Aschenputtel","Cendrillon")
+var ab = new Quiz("Dornröschen","la belle au bois dormant")
+var ac = new Quiz("fantasievoll","merveilleux")
+var ad = new Quiz("zum Träumen bringen","faire rêver")
+var ae = new Quiz("immer ein Happy End haben","avoir toujours une fin heureuse")
+var af = new Quiz("die Handlung(en)","l'action")
+var ag = new Quiz("fressen","manger, dévorer")
+var ah = new Quiz("das Tier(e)","l'animal")
+var ai = new Quiz("die Figur(en)","le personnage")
+var aj = new Quiz("die Hauptfigur","le personnage principal")
+var ak = new Quiz("die Entwicklung(en)","le développement")
+var al = new Quiz("behandeln","traiter, évoquer")
 
-var allemand = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u];
+
+var allemand = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al];
 shuffle(allemand);
 var p = 0;
 var ga = 0;
@@ -102,7 +121,7 @@ document.addEventListener('keypress', function(event) {
         timeout = setTimeout(function() {
           document.getElementById("trait").style.background = "rgb(177,177,177)";
         },800)
-        per = per + 5;
+        per = per + 3;
         ppp = per.toString();
         c_v.splice(0, 1, ppp);
         prr = c_v.join('');
@@ -112,7 +131,7 @@ document.addEventListener('keypress', function(event) {
         setTimeout(function() {
           document.getElementById("trait").style.background = "rgb(177,177,177)";
         },800)
-        fer = fer + 5;
+        fer = fer + 3;
         fff = fer.toString();
         faux.splice(0, 1, fff);
         frr = faux.join('');
