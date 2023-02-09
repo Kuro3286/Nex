@@ -10,6 +10,61 @@ body {
     background-color: #333;
 }
 
+.retour {
+    display: flex;
+    justify-content: left;
+}
+
+.retour .return {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: rgb(117,117,117);
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: rgb(34,34,34);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.retour .return .un {
+    position: absolute;
+    font-size: 1.3em;
+    left: 3px;
+}
+
+.retour .return .deux {
+    position: absolute;
+    font-size: 1.3em;
+    left: 10px;
+}
+
+.retour .return .lettre {
+    position: absolute;
+    left: 28px;
+    font-size: 1.2em;
+    top: 7px;
+}
+
+.retour .return:hover {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: rgb(177, 177, 177);
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: 3px solid rgb(117,117,117);
+    border-radius: 6px;
+    background-color: rgb(34,34,34);
+    text-decoration: none;
+}
+
 
 .general {
     display: flex;
@@ -54,6 +109,7 @@ body {
     outline: none;
     background: transparent;
     font-size: 0.95em;
+    letter-spacing: 0.05em;
     z-index: 2;
     caret-color: rgb(177,177,177);
     color: rgb(177,177,177);
