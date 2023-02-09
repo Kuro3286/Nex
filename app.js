@@ -39,7 +39,7 @@ var j = new Quiz("eine Moral lehren","enseigner une morale")
 var k = new Quiz("Werte weiter/geben","transmettre des valeurs")
 var l = new Quiz("ein gutes/schlechtes Vorbild sein","être un bon/mauvais exemple")
 var m = new Quiz("hinter (+D) stecken","se cacher derrière quelque chose")
-var n = new Quiz("einen wahren Kern haben","avoir un fond de vérité")
+var n = new Quiz("einen wahren Kern haben","avoir un fond de réalité")
 var o = new Quiz("die Realität wider/spiegeln","refléter la réalité")
 var p = new Quiz("grausam","cruel")
 
