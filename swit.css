@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI Semibold, sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.general .un {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    height: 520px;
+    border-radius: 6px;
+    border: 3px solid rgb(117,117,117);
+    background-color: rgb(34, 34, 34);
+}
+
+.general .un .print{
+    position: absolute;
+    color: rgb(177,177,177);
+    top: 80px;
+    font-size: 1.1em;
+}
+
+.general .un .inputBox{
+    display: flex;
+    top: 170px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.general .un .inputBox input{
+    position: relative;
+    padding: 8px 2px;
+    width: 290px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.95em;
+    z-index: 2;
+    caret-color: rgb(177,177,177);
+    color: rgb(177,177,177);
+}
+
+.general .un .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 0px 0;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.2s;
+    color: rgb(177,177,177);
+    letter-spacing: 0.05em;
+}
+
+.general .un .inputBox input:valid ~ span,
+.general .un .inputBox input:focus ~ span{
+    transform: translateY(-22px);
+    font-size: 0.75em;
+    color: rgb(177, 177, 177);
+}
+
+.general .un .inputBox i{
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: rgb(177,177,177);
+    transition: 0.3s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.general .un .corr{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 270px;
+    width: 290px;
+    height: 190px;
+    border-radius: 6px;
+    border: 3px solid rgb(117,117,117);
+    background-color: transparent;
+}
+
+.general .un .corr .mot{
+    position: absolute;
+    padding: 0 2px 0 2px;
+    color: rgb(177,177,177);
+    top: 30px;
+}
+
+.general .un .corr .stat{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    width: 245px;
+    height:50px;
+    border-radius: 6px;
+    border: 3px solid rgb(177,177,177);
+    background-color: transparent;
+}
+
+.general .un .corr .stat .barre{
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background-color: rgb(177,177,177);
+}
+
+.general .un .corr .stat .rouge{
+    position: absolute;
+    left: 121px;
+    width: 0px;
+    height: 16px;
+    background-color: red;
+}
+
+.general .un .corr .stat .vert{
+    position: absolute;
+    right: 121px;
+    width: 0px;
+    height: 16px;
+    background-color: green;
+}
+
