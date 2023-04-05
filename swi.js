@@ -23,7 +23,7 @@ class Quiz {
     }
 }
 
-// Die Welt der Mädchen (Station 1)
+/*// Die Welt der Mädchen (Station 1)
 var a = new Quiz("Er war einmal...","Il était une fois")
 var b = new Quiz("das Märchen(-)","le conte")
 var c = new Quiz("märchenhaft","féérique")
@@ -34,12 +34,12 @@ var g = new Quiz("mündlich überliefern","transmettre oralement")
 var h = new Quiz("um/arbeiten","remanier, retravailler")
 
 // Märchen und Moral (Station 1)
-var i = new Quiz("eine Botschaft vermitteln","transmettre un message")
+var i = new Quiz("eine Botschaft vermitteln","transmettre en message")
 var j = new Quiz("eine Moral lehren","enseigner une morale")
 var k = new Quiz("Werte weiter/geben","transmettre des valeurs")
 var l = new Quiz("ein gutes/schlechtes Vorbild sein","être un bon/mauvais exemple")
 var m = new Quiz("hinter (+D) stecken","se cacher derrière quelque chose")
-var n = new Quiz("einen wahren Kern haben","avoir un fond de réalité")
+var n = new Quiz("einen während Kern haben","avoir un fond de réalité")
 var o = new Quiz("die Realität wider/spiegeln","refléter la réalité")
 var p = new Quiz("grausam","cruel")
 
@@ -67,10 +67,37 @@ var ah = new Quiz("das Tier(e)","l'animal")
 var ai = new Quiz("die Figur(en)","le personnage")
 var aj = new Quiz("die Hauptfigur","le personnage principal")
 var ak = new Quiz("die Entwicklung(en)","le développement")
-var al = new Quiz("behandeln","traiter, évoquer")
+var al = new Quiz("behandeln","traiter, évoquer")*/
+
+//Flucht und Integration
+var a = new Quiz("die Flucht","la fuite")
+var b = new Quiz("aus seinem Land fliehen (o,o)","fuir son pays")
+var c = new Quiz("aus politischen Gründen fliehen","fuir pour des raisons politiques")
+var d = new Quiz("aus wirtschaftlichen Gründen fliehen","fuir pour des raisons économiques")
+var e = new Quiz("der Flüchtling (e)","le réfugié")
+var f = new Quiz("die Flüchtlingskrise","la crise des réfugiés")
+var g = new Quiz("Flüchtlinge auf/nehmen (a,o,i)","accueillir des réfugiés")
+var h = new Quiz("der Migrant (en)","le migrant")
+var i = new Quiz("der Ausländer (-)","l'étranger")
+var j = new Quiz("ein/wandern","immigrer")
+var k = new Quiz("aus/wandern","émigrer")
+var l = new Quiz("der Einwanderer","l'immigré")
+var m = new Quiz("der Auswanderer","l'émigrant")
+var n = new Quiz("die Heimat","la patrie")
+var o = new Quiz("seine Heimat verlassen","quitter sa patrie")
+var p = new Quiz("fremd","étranger")
+var q = new Quiz("sich fremd fühlen","se sentir étranger")
+var r = new Quiz("die Willkommenskultur","la culture de l'accueil")
+var s = new Quiz("jemandem unterstützen","supporter quelqu'un")
+var t = new Quiz("die Sprachbarriere überwinden","surmonter la barrière de la langue")
+var u = new Quiz("Verantwortung (für etwas) tragen","prendre la responsabilité (de quelque chose)")
+var v = new Quiz("fremdfeindlich, rassistisch","xénophobe, raciste")
+var w = new Quiz("der Rassismus","le racisme")
+var x = new Quiz("die Abschiebung","la déportation")
+var y = new Quiz("abgeschoben werden","se faire expulser")
 
 
-var allemand = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al];
+var allemand = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y];
 shuffle(allemand);
 var p = 0;
 var ga = 0;
@@ -121,7 +148,7 @@ document.addEventListener('keypress', function(event) {
         timeout = setTimeout(function() {
           document.getElementById("trait").style.background = "rgb(177,177,177)";
         },800)
-        per = per + 3;
+        per = per + 4;
         ppp = per.toString();
         c_v.splice(0, 1, ppp);
         prr = c_v.join('');
@@ -131,7 +158,7 @@ document.addEventListener('keypress', function(event) {
         setTimeout(function() {
           document.getElementById("trait").style.background = "rgb(177,177,177)";
         },800)
-        fer = fer + 3;
+        fer = fer + 4;
         fff = fer.toString();
         faux.splice(0, 1, fff);
         frr = faux.join('');
