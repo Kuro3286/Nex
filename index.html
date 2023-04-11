@@ -4,10 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Manapi</title>
+        <title>Nouveau Test</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="couleur_bouton" id="coul_b">
+            <div class="themes_couleur" id="the_cou">
+                <div class="contour" id="cont">
+                    <div class="uno" id="uni" onclick="remplacer_bleu(); remplacer_vert(); remplacer_violet(); remplacer_rose(); remplacer_rouge(); cool(); switch_('uni');"></div>
+                    <div class="dos" id="dis" onclick="switch_('dis')"></div>
+                    <div class="tres" id="tris" onclick="switch_('tris')"></div>
+                    <div class="coul_bou" id="coul" onclick="remplacer_gris(); switch_('coul');"></div>
+                </div>
+            </div>
+        </div>
         <div class="icon">
             <a class="bouton" href="./identification.html">
                 <ion-icon class="head" name="person-outline"></ion-icon>
@@ -26,7 +36,7 @@
                         <div class="detail">
                             <h2>Création</h2>
                             <p>Dans cette rubrique, vous pourrez créer des listes vous permettant de retenir les mots ou bien les définitions que vous souhaitez apprendre.</p>
-                            <a href="#">Voir plus</a>
+                            <a href="./creation.html">Voir plus</a>
                         </div>
                     </div>
                 </div>
@@ -80,6 +90,7 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
