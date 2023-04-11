@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #333;
+    background: hwb(0 20% 80%);
 }
 
 .general {
@@ -40,7 +40,7 @@ body {
 .general .container .card .lines {
     position: absolute;
     inset: 0;
-    background-color: black;
+    background-color: rgb(0,0,0);
     overflow: hidden;
 }
 
@@ -70,7 +70,7 @@ body {
     align-items: center;
     overflow: hidden;
     transition: 0.5s;
-    background-color: black;
+    background-color: rgb(0,0,0);
 }
 
 .general .container .card .imgBx .cadre .image {
@@ -94,6 +94,7 @@ body {
 
 .general .container .card .imgBx .cadre ion-icon {
     position: absolute;
+    color: rgb(0,0,0);
     z-index: 1;
     transition: 0.5s;
 }
@@ -146,7 +147,7 @@ body {
     display: inline-block;
     padding: 8px 15px;
     background-color: aliceblue;
-    color: black;
+    color: rgb(0,0,0);
     margin-top: 20px;
     font-weight: 500;
     text-decoration: none;
@@ -191,8 +192,8 @@ body {
 .general .container .card .content .detail a {
     display: inline-block;
     padding: 8px 15px;
-    background-color: aliceblue;
-    color: black;
+    background-color: hwb(208 94% 0%);
+    color: rgb(0,0,0);
     margin-top: 10px;
     font-weight: 500;
     text-decoration: none;
@@ -224,7 +225,7 @@ body {
     right: 50px;
     transition: 0.5s;
     border-radius: 15px;
-    border: black 3px solid;
+    border: rgb(0,0,0) 3px solid;
 }
 
 .icon .bouton:hover {
@@ -235,11 +236,108 @@ body {
     font-size: 2em;
     pointer-events: none;
     transition: 0.5s;
-    color: black;
+    color: rgb(0,0,0);
 }
 
 .icon .bouton:hover .head {
     font-size: 2em;
     pointer-events: none;
     color: rgb(177, 177, 177);
+}
+
+
+.couleur_bouton{
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.couleur_bouton .themes_couleur{
+    display: flex;
+    position: absolute;
+    justify-content: right;
+    width: 40px;
+    height: 40px;
+    top: 60px;
+    left: 50px;
+    border-radius: 30px;
+    background: none;
+    border: rgb(0,0,0) 2px solid;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.couleur_bouton:hover .themes_couleur{
+    width: 150px;
+    border-radius: 30px;
+}
+
+.couleur_bouton .themes_couleur .contour{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -2px;
+    border: rgb(0,0,0) 2px solid;
+    background: transparent;
+    z-index: 1;
+}
+
+.couleur_bouton:hover .themes_couleur .contour{
+    left: -2px;
+}
+
+.couleur_bouton .themes_couleur .coul_bou{
+    display: flex;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 0px;
+    background: linear-gradient(135deg,rgb(0, 0, 0),20%,rgb(34, 34, 34),80%,rgb(177, 177, 177));
+    border-radius: 50%;
+    transform: none;
+    transition: 0s;
+    opacity: 1;
+    z-index: 3;
+}
+
+.couleur_bouton .themes_couleur .uno{
+    display: flex;
+    position: absolute;
+    background: linear-gradient(135deg,rgb(78, 1, 85),40%,rgb(255, 0, 0),70%,rgb(255, 166, 0));
+    width: 30px;
+    height: 30px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 2;
+}
+
+.couleur_bouton .themes_couleur .dos{
+    display: flex;
+    position: absolute;
+    background: linear-gradient(135deg,rgb(47, 0, 255),30%,rgb(0, 119, 255),70%,rgb(72, 255, 0));
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.couleur_bouton .themes_couleur .tres{
+    display: flex;
+    position: absolute;
+    background: linear-gradient(135deg,rgb(25, 0, 255),30%,rgb(0, 126, 21),75%,rgb(255, 251, 0));
+    width: 30px;
+    height: 30px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 0;
 }
